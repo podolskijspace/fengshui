@@ -1,0 +1,206 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(14, 14, 14, 0.8);
+  display: none;
+}
+
+.popup__inner {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  background-color: #fff;
+  position: relative;
+  margin: 170px auto 0;
+}
+
+.popup__video {
+  width: 100%;
+  height: 100%;
+}
+
+.popup__close {
+  width: 10px;
+  position: absolute;
+  right: 30px;
+  left: 803px;
+  top: -47px;
+  width: 40px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.popup__close:hover {
+  transform: rotate(180deg);
+}
+
+.popup-feedback__close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #c7c7c7 100%);
+  border-radius: 50%;
+  border: none;
+  right: -10px;
+  top: -10px;
+  font-size: 36px;
+  font-weight: 100;
+  box-shadow: -10px;
+}
+
+.popup-feedback__inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px #525151;
+  width: 400px;
+  padding: 30px 15px;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+@media (max-width: 710px) {
+  .popup-feedback__inner {
+    max-width: 400px;
+    width: 90%;
+  }
+}
+
+.popup-feedback__inner .policy {
+  font-size: 18.681px;
+  font-family: 'Gotham Pro';
+  color: #828282;
+  text-decoration: underline;
+  line-height: 1.359;
+  text-align: center;
+  -moz-transform: matrix(0.91, 0, 0, 0.91, 0, 0);
+  -webkit-transform: matrix(0.91, 0, 0, 0.91, 0, 0);
+  -ms-transform: matrix(0.91, 0, 0, 0.91, 0, 0);
+  width: 80%;
+}
+
+@media (max-width: 710px) {
+  .popup-feedback__inner .policy {
+    width: 90%;
+    margin: 5% auto 0;
+    font-size: 14px;
+  }
+}
+
+.popup-feedback__inner .form__block-input {
+  width: 100%;
+  margin: 0%;
+  margin-bottom: 1rem;
+}
+
+.popup-feedback__inner p {
+  margin-bottom: 1rem;
+}
+
+.popup-feedback__inner button {
+  margin-bottom: 1rem;
+}
+
+.popup-feedback__headline {
+  font-size: 49.733px;
+  font-style: italic;
+  line-height: 1.046;
+  margin-bottom: 1rem;
+  font-family: 'Merriweather-Italic';
+}
+
+@media (max-width: 710px) {
+  .popup-feedback__headline {
+    font-size: 30px;
+  }
+}
+
+.popup-feedback__headline span {
+  color: #82c679;
+  -moz-transform: matrix(0.94445, 0, 0, 0.94377, 0, 0);
+  -webkit-transform: matrix(0.94445, 0, 0, 0.94377, 0, 0);
+  -ms-transform: matrix(0.94445, 0, 0, 0.94377, 0, 0);
+}
+
+.popup-feedback__text {
+  font-size: 21px;
+  font-family: 'Gotham Pro';
+  color: #3f3d3d;
+  line-height: 1.421;
+  text-align: center;
+  -moz-transform: matrix(0.9482, 0, 0, 0.94752, 0, 0);
+  -webkit-transform: matrix(0.9482, 0, 0, 0.94752, 0, 0);
+  -ms-transform: matrix(0.9482, 0, 0, 0.94752, 0, 0);
+}
+
+@media (max-width: 710px) {
+  .popup-feedback__text {
+    font-size: 14px;
+  }
+}
+
+.popup-feedback__text span {
+  font-weight: bold;
+}
+
+#form__input {
+  font-family: 'Gotham Pro';
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #f6f6f6;
+  height: 80px;
+  width: 346px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  color: #acacac;
+  padding-left: 26px;
+  margin: 0 auto 20px auto;
+}
+
+@media (max-width: 710px) {
+  #form__input {
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  text-shadow: 0 2px 0 #989898;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 321px;
+  height: 94px;
+  -webkit-box-shadow: 0 5px 0 #2b8252, inset 0 -3px 4px rgba(52, 255, 231, 0.18);
+  box-shadow: 0 5px 0 #2b8252, inset 0 -3px 4px rgba(52, 255, 231, 0.18);
+  border-radius: 47px;
+  background-color: #2b8252;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#3ba960), to(#87cc62));
+  background-image: linear-gradient(to top, #3ba960 0%, #87cc62 100%);
+}
+
+@media (max-width: 710px) {
+  .btn {
+    width: 280px;
+    height: 80px;
+    font-size: 14px;
+  }
+}

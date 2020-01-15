@@ -1,0 +1,488 @@
+@import "media"
+
+*
+    margin: 0
+    padding: 0
+
+.lato-black
+    font-family: 'Lato-Black'
+
+.lato-bold
+    font-family: 'Lato-Bold'
+
+.lato-regular
+    font-family: 'Lato-Regular'
+
+.none
+    display: none
+
+.xl-none
+    @media (max-width: $media-xl)
+        display: none
+.lg-none
+    @media (max-width: $media-lg)
+        display: none
+.md-none
+    @media (max-width: $media-md)
+        display: none
+.sm-none
+    @media (max-width: $media-sm)
+        display: none
+.xl-block
+    @media (max-width: $media-xl)
+        display: block
+.lg-block
+    @media (max-width: $media-lg)
+        display: block
+.md-block
+    @media (max-width: $media-md)
+        display: block
+.sm-block
+    @media (max-width: $media-sm)
+        display: block
+p
+    font-family: 'Lato-Medium'
+    margin: 0
+
+li
+    list-style-type: none
+    
+.button
+    background: #FAD264
+    border-radius: 40px
+    text-transform: uppercase
+    font-size: 18px
+    font-family: 'Lato-Regular'
+    text-align: center
+    padding: 30px 60px
+    border: none
+    transition: 0.3s
+    outline: none
+    &:hover
+        box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.1)
+    &:focus
+        outline: none
+
+
+.wrapper
+    max-width: 1900px
+    margin: 0px auto
+
+.header
+    background: url('../img/header.jpg') no-repeat
+    padding: 20px 0 0px 0
+    @media (max-width: $media-lg)
+        background: url('../img/header-bg-md.jpg') no-repeat center top
+        background-color: #7e4e7e
+    &--logo
+        position: relative
+        &__line
+            position: absolute
+            display: none
+            width: 63px
+            height: 1px
+            background: #FFC34B
+            left: 50%
+            top: 40px
+            &_left
+                transform: translate(-120px, 0)
+            &_right
+                transform: translate(60px, 0)
+            @media (max-width: $media-lg)
+                display: block
+        &__logo
+            @media (max-width: $media-lg)
+                margin: 0px auto
+                display: block
+    &__top--text
+        font-size: 20px
+        margin-top: 25px
+        color: #ffffff
+        text-align: center
+        @media (max-width: $media-lg)
+            margin-top: 10px
+        @media (max-width: $media-md)
+            font-size: 16px
+        @media (max-width: $media-sm)
+            width: 230px
+            margin: 0px auto
+    &__intro
+        font-size: 55px
+        color: #ffffff
+        text-align: center
+        text-transform: uppercase
+        margin: 0
+        @media (max-width: $media-md)
+            font-size: 20px
+    &__title
+        font-size: 60px
+        font-family: 'ChinaCyr'
+        text-align: center
+        color: #FAD264
+        margin: 0
+        @media (max-width: $media-md)
+            font-size: 20px
+    &--starLine
+        position: relative
+        &__stars
+            margin: 0px auto
+            width: max-content
+        &__img
+            margin: 0px -4px
+        &__line
+            width: 586px
+            height: 1px
+            background: #FAD264
+            position: absolute
+            left: 50%
+            transform: translate(-50%,0%)
+            top: 13px
+            @media (max-width: $media-md)
+                width: 230px
+    &__info--text
+        font-size: 18px
+        text-align: center
+        width: 580px
+        margin: 20px auto
+        color: #ffffff
+        @media (max-width: $media-md)
+            font-size: 16px
+            width: 490px
+        @media (max-width: $media-sm)
+            width: 230px
+            margin: 0px auto
+        &_color
+            color: #FAD264
+    &__feedback
+        text-align: center
+        font-size: 18px
+        margin-top: 12px
+        margin-bottom: 18px
+        color: #ffffff
+        @media (max-width: $media-md)
+            font-size: 12px
+            margin: 3px 0
+            transform: translate(0px, 150px)
+        @media (max-width: $media-sm)
+            transform: translate(0px, 170px)
+            width: 230px
+            display: block
+            margin: 0px auto
+    &__line
+        height: 63px;
+        width: 100%
+        background: #FAD264
+        font-size: 20px
+        text-transform: uppercase
+        text-align: center
+        font-family: 'Lato-Medium'
+        padding-top: 16px
+        @media (max-width: $media-sm)
+            margin-top: 17px
+            height: auto
+            padding: 16px 0
+            line-height: 19px
+        p
+            @media (max-width: $media-sm)
+                margin: 0 auto
+                width: 230px
+                display: block
+    &__img
+        @media (max-width: $media-lg)
+            display: block
+            margin: 0px auto
+        @media (max-width: $media-md)
+            width: 230px
+            transform: translate(0px, -40px)
+        @media (max-width: $media-sm)
+            transform: translate(0px, -25px)
+
+.buy
+    background: url('../img/buy.jpg') no-repeat
+    padding: 14px 0 40px 0
+    color: #ffffff
+    font-size: 18px
+    text-align: center
+    @media (max-width: $media-sm)
+        background: url('../img/buy-bg-sm.jpg') no-repeat center top
+        background-color: #807384
+        font-size: 16px
+    &__img
+        margin: 0px auto
+        display: block
+    &__text
+        margin-top: 7px
+        line-height: 1.3em
+        @media (max-width: $media-sm)
+            line-height: 19px
+            width: 230px 
+            display: block
+            margin: 0px auto 25px auto
+    &__about--cost
+        margin-top: 22px
+        @media (max-width: $media-sm)
+            font-size: 18px
+    &__cost
+        font-size: 35px
+        color: #FAD264
+        margin-top: 7px
+    &__btn
+        margin-top: 17px
+        @media (max-width: $media-sm)
+            width: 230px
+            padding: 22px 0
+            line-height: 22px
+    &__order   
+        margin-top: 22px
+        @media (max-width: $media-sm)
+            width: 230px 
+            display: block
+            margin: 17px auto 0px auto
+    &__time--text
+        margin-top:  9px
+        @media (max-width: $media-sm)
+            width: 230px 
+            display: block
+            margin: 17px auto 0px auto
+    &__timer
+        margin-top: 12px
+        @media (max-width: $media-sm)
+            width: 230px 
+            display: block
+            margin: 17px auto 0px auto
+
+.diff
+    padding: 60px 0 20px 0
+    @media ( max-width: $media-lg)
+        padding: 20px 10px
+    @media ( max-width: $media-sm)
+        display: none
+    &__title
+        font-size: 35px
+        text-align: center
+        width: 600px
+        margin: 0px auto
+        @media ( max-width: $media-md)
+            font-size: 24px
+        &_red
+            color: #E20505
+    &__list
+        margin-top: 25px
+        margin-bottom: 65px
+    &__img
+        display: block
+        margin: 0px auto
+    &__text
+        font-size: 18px
+        font-family: 'Lato-Regular'
+        margin-top: 7px
+        text-align: center
+        line-height: 21.6px
+        @media ( max-width: $media-md)
+            font-size: 14px
+    &--line
+        width: max-content
+        margin: 0px auto
+        @media ( max-width: $media-lg)
+            display: none
+        &__img
+            &:nth-child(1)
+                margin-right: -6px
+            &:nth-child(2)
+                margin-top: 24px
+            &:nth-child(3)
+                margin-left: -6px
+
+.abstract
+    padding: 30px 0 70px 0
+    @media ( max-width: $media-sm)
+        display: none
+    &__title
+        font-size: 35px
+        text-align: center
+        margin-bottom: 60px
+        @media ( max-width: $media-lg)
+            margin-bottom: 20px
+        @media ( max-width: $media-md)
+            font-size: 24px
+        &_red
+            color: #E20505
+    &--item
+        &__border
+            border: 3px solid #FAD264
+            padding: 40px 23px 0 23px
+            text-align: center
+            height: 647px
+            @media ( max-width: $media-xl)
+                height: 560px
+                padding: 10px 24px 0 23px
+            @media ( max-width: $media-lg)
+                border: none
+                height: auto
+                margin-bottom: 10px
+        &__title
+            font-family: 'Lato-Bold'
+            font-size: 20px
+            margin-bottom: 10px
+            line-height: 24px
+            @media ( max-width: $media-md)
+                font-size: 17px
+        &__img
+            margin-bottom: 20px
+            @media ( max-width: $media-xl)
+                width: 240px
+        &__text
+            font-size: 18px
+            line-height: 21.6px
+            @media ( max-width: $media-md)
+                font-size: 14px
+            
+.self
+    background: #EBEBEB
+    padding: 65px 0 65px 0
+    @media ( max-width: $media-lg)
+        padding: 20px 0
+    @media ( max-width: $media-sm)
+        display: none
+    &__title
+        font-size: 35px
+        text-align: center
+        margin-bottom: 20px
+        @media ( max-width: $media-md)
+            font-size: 24px
+        &_red
+            color: #E20505
+    &__img
+        display: block
+        margin: 0px auto
+        @media ( max-width: $media-xl)
+            width: 270px
+    &__text
+        font-size: 18px
+        line-height: 21.6px
+        font-family: 'Lato-Regular'
+        margin-top: 20px
+        text-align: center
+        @media ( max-width: $media-md)
+            font-size: 14px
+
+.cost
+    padding: 60px 0 5px 0
+    @media ( max-width: $media-lg)
+        display: none
+    &__block
+        width: 754px
+        border: 3px solid #E20505
+        height: 418px
+        padding-top: 40px
+        font-size: 18px
+        text-align: center
+        margin: 0px auto
+    &__title
+        font-size: 24px
+        margin-bottom: 10px
+        text-transform: uppercase
+    &__cost
+        font-size: 35px
+        color: #E20505
+        margin-bottom: 18px
+    &__intro
+        margin-top: 20px
+    &__timer
+        margin-top: 40px
+        font-family: 'Lato-Medium'
+
+.after
+    padding: 61px 0 0 0
+    background: url('../img/after-bg.jpg') no-repeat center bottom
+    @media ( max-width: $media-lg)
+        background: transparent
+    @media ( max-width: $media-sm)
+        display: none
+    &__title
+        font-size: 24px
+        text-align: center
+        &_red
+            color: #E20505
+    &__item
+        padding-left: 40px
+        background: url('../img/dash.png') no-repeat left center
+        margin-bottom: 20px
+        @media ( max-width: $media-lg)
+            margin-bottom: 7px
+    &__text
+        font-size: 18px
+        line-height: 22px
+        text-align: left
+        margin-top: 40px
+        @media ( max-width: $media-md)
+            font-size: 14px
+        @media ( max-width: $media-lg)
+            margin-top: 10px
+    &__img 
+        margin-top: 44px
+        @media ( max-width: $media-lg)
+            display: none
+
+.footer
+    background: url("../img/footer-bg.jpg")
+    padding: 30px 0 18px 0
+    color: #ffffff
+    font-size: 18px
+    @media ( max-width: $media-lg)
+        text-align: center
+        background: #491a50
+    @media ( max-width: $media-md)
+        font-size: 14px
+        padding: 5px 0
+    @media ( max-width: $media-sm)
+        display: none
+    &__line
+        width: 2px
+        height: 85px
+        background: #FAD264
+        margin: 3px auto 0 auto
+        @media ( max-width: $media-lg)
+            display: none
+    &__text
+        margin: 0
+        text-transform: uppercase
+        line-height: 22px
+        font-family: 'Lato-Bold'
+        &_roboto
+            font-size: 12px
+            font-family: 'Roboto-Medium'
+            line-height: 14px
+            color: rgba(255, 255, 255, 0.54)
+            @media ( max-width: $media-md)
+                font-size: 10px
+        &_middle
+            margin: 10px 0 9px 0
+            @media ( max-width: $media-md)
+                margin: 2px 0
+        &_after
+            margin-top: 17px
+            font-size: 12px
+            line-height: 14px
+            color: rgba(255, 255, 255, 0.87)
+            font-family: 'Roboto-Medium'
+            text-align: center
+            @media ( max-width: $media-md)
+                font-size: 10px
+                margin-top: 3px
+    &__mail
+        color: #FAD264
+        text-decoration: underline
+        font-family: 'Lato-Bold'
+        margin-top: 13px
+        @media ( max-width: $media-md)
+            margin-top: 2px
+    &__phone
+        color: #FAD264
+        font-size: 24px
+        text-decoration: underline
+        margin: 7px 0 4px 0
+        font-family: 'Lato-Bold'
+        @media ( max-width: $media-md)
+            font-size: 14px
+            margin: 2px 0
